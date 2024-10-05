@@ -1,0 +1,49 @@
+<div class="w-full flex justify-center">
+        <form class=" bg-opacity-40 py-4 px-8 w-full md:w-3/4 lg:w-1/2 rounded shadow-lg">
+            <!-- Form fields in one line -->
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                <!-- "I'm looking for" Label above the Input -->
+                <div class="flex flex-col items-start space-y-2">
+                    <label class="block text-white text-lg font-semibold">I'm looking for</label>
+                    <input type="text" class="w-full md:w-auto px-4 py-2 border border-gray-300 rounded" placeholder="Job title, company, etc.">
+                </div>
+
+                <!-- Age from-to Inputs -->
+                <div class="flex flex-col space-x-2">
+                    <label class="block text-white text-lg font-semibold">Aged</label>
+                    <div class="flex">
+                        <input type="number" class="w-full md:w-auto px-4 py-2 border border-gray-300 rounded" placeholder="Age From">
+                        <label class="text-white m-2">to</label>
+                        <input type="number" class="w-full md:w-auto px-4 py-2 border border-gray-300 rounded" placeholder="Age To">
+                    </div>
+                   
+                </div>
+
+                <div>
+                    <label class="block text-white text-lg font-semibold">of religion</label>
+                    <select class="w-full md:w-auto px-4 py-2 border border-gray-300 rounded">
+                        <option>Select</option>
+                        <option>Hindu</option>
+                        <option>sikh</option>
+                        <option>muslim</option>
+                    </select>
+                </div>
+
+                <!-- Select dropdown for Language -->
+                <div>
+                    <label class="block text-lg font-semibold">and mother tongue</label>
+                    <select class="w-full md:w-auto px-4 py-2 border border-gray-300 rounded">
+                        <option>Select Language</option>
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                </div>
+
+                <!-- Login Button -->
+                <div>
+                    <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-700">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>

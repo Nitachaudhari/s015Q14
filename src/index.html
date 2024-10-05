@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Form</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://img2.shaadi.com/assests/2024/images/shaadi-north-desktop.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Section with Logo and Buttons -->
+    <div class="flex justify-between items-center p-6 m-20">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img src="https://img2.shaadi.com/assests/2021/images/Matrimony-Service-by-Shaadi.com.png" alt="Logo" class="w-20">
+        </div>
+        
+        <!-- Buttons on the right -->
+        <div class="space-x-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Login</button>
+            <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Help</button>
+        </div>
+    </div>
+
+    <!-- Centered Form at the Bottom -->
+    <div class="absolute bottom-0 w-full flex justify-center mb-4">
+        <form class="bg-black bg-opacity-50 py-8 px-8 mx-auto w-full md:w-4/5 lg:w-3/5 rounded shadow-lg">
+            <!-- Form fields in one line -->
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+                <!-- "I'm looking for" Label above the Input -->
+                <div class="flex flex-col items-start space-y-2 w-full md:w-1/3">
+                    <label class="text-white text-lg font-semibold font-light">I'm looking for:</label>
+                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded" placeholder="Job title, company, etc.">
+                </div>
+
+                <!-- Age from-to Inputs -->
+                <div class="flex flex-col space-y-2 w-full md:w-1/3">
+                    <label class="text-white text-lg font-semibold text-white font-light">Aged:</label>
+                    <div class="flex items-center">
+                        <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded" placeholder="Age From">
+                        <span class="mx-2 text-white">to</span>
+                        <input type="number" class="w-full px-4 py-2 border border-gray-300 rounded" placeholder="Age To">
+                    </div>
+                </div>
+
+                <!-- Religion Dropdown -->
+                <div class="flex flex-col items-start space-y-2 w-full md:w-1/3">
+                    <label class="text-white text-lg font-semibold font-light">of religion:</label>
+                    <select class="w-full px-4 py-2 border border-gray-300 rounded">
+                        <option>Select</option>
+                        <option>Hindu</option>
+                        <option>Sikh</option>
+                        <option>Muslim</option>
+                    </select>
+                </div>
+
+                <!-- Language Dropdown -->
+                <div class="flex flex-col items-start space-y-2 w-full md:w-1/3" >
+                    <label class="block text-lg text-white font-light ">Select Language:</label>
+                    <select class="w-full px-4 py-2 border border-gray-300 rounded">
+                        <option>Select Language</option>
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                </div>
+
+                <!-- Login Button -->
+                <div class="flex align-middle md:w-1/4 font-light ">
+                    <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-700 w-full">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
